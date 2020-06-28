@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+				/*
+		 * 父元素有定位时，按照父元素的定位来定位
+		 * 父元素无定位时，按照浏览器的标准来进行定位
+		 */
+			.b{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			}
+			
+	.father{
+		position: relative;
+		width: 500px;
+		height: 500px;
+		background-color: chartreuse;
+	}
+			
+		</style>
+	</head>
+	<body>
+		<div class="a">1</div>
+		<div class="father">
+			<div class="b">2</div>
+		</div>
+		
+	</body>
+</html>

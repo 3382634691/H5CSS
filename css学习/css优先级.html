@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+        	作者：3382634691@qq.com
+        	时间：2020-06-10
+        	描述：
+        	
+        	
+        	选择器权重优先级
+        	!important 最重要的(定义权重最高的)> 行内样式>id选择器  >类选择 伪类选择器》元素选择器>继承
+        -->
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				color: pink!important;
+			}
+			.test{
+				color: red;
+			}
+			#aaa{
+				color: blue;
+			}
+			
+			
+			/*
+			 * 父类的权重id大，但是div子类属于继承权重为0
+			 */
+		#fa{
+				color: black;
+			}
+			
+		</style>
+	</head>
+	<body >
+		<div id="fa">
+			<div class="test" id="aaa">我来了</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box1{
+				position: relative;
+				top:80px;
+				left: 10px;
+				/*
+				 * 相对定位是不改变之前位置的
+				 * 下面的标准流还是按顺序排列
+				 */
+				height: 100px;
+				width: 100px;
+				background-color: red;
+			}
+			.box2{
+				
+				height: 100px;
+				width: 100px;
+				background-color: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box12{
+				
+				width: 0;
+				height: 0;
+				border-top: 10px solid pink;
+				border-right: 10px solid red;
+				border-bottom: 10px solid blue;
+				border-left: 10px solid green;
+			}
+			.box2{
+				width: 0;
+				height: 0;
+				border: 50px solid transparent;
+				border-left-color: pink;
+				
+			}
+			
+			.jd{
+				position: relative;
+				width: 120px;
+				height: 249px;
+				background-color: pink;
+			}
+			.jd span{
+				position: absolute;
+				right: 15px;
+				top:-10px
+				width: 0;
+				height: 0;
+				line-height: 0;
+				font-size: 0;
+				border: 5px solid transparent;
+				border-bottom-color:red ;
+			}
+			
+			/*子绝父相别忘了*/
+		</style>
+	</head>
+	<body>
+		<div class="box12"></div>
+		<div class="box2"></div>
+	   <div>  12</div>
+		<div class="jd">
+			<span></span>
+		</div>
+	</body>
+</html>
